@@ -9,6 +9,7 @@ export default class extends BaseSchema {
       table.string('nome', 45).notNullable()
       table.decimal('preco').notNullable()
       table.string('tamanho', 45)
+      table.integer('tipo_id')
 
       table.timestamp('created_at')
       table.timestamp('updated_at')
